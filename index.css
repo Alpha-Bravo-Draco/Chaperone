@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  /* max-width: 100%; */
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav.navbar {
+  display: flex;
+  flex-direction: row;
+  position: sticky !important;
+  top: 0px;
+  height: fit-content;
+  z-index: 999;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(3, 3, 3, 0.263);
+  width: 100vw;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+.logo-section img{
+  height: 45px;
+  width: auto;
+}
+
+.second-section {
+  /* display: flex;
+  flex-direction: row; */
+  position: absolute;
+  right: 40px;
+}
+
+.second-section ul {
+  display: flex;
+  flex-direction: row;
+  /* margin: auto; */
+
+}
+
+.second-section ul li {
+  list-style: none;
+  transition: all 1.2s ease;
+}
+
+.second-section ul li a {
+  font-size: 19px;
+  padding: 25px 25px;
+  transition: all 0.3s ease;
+  color: #454545;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.second-section ul li a:hover {
+  background-color: rgb(65, 85, 94);
+  color: white;
+}
+
+.button-section {
+  display: flex;
+  position: relative;
+}
+
+/* .btn {
+  margin: auto 8px;
+
+  padding: 10px 15px;
+  position: absolute;
+  background-color: white;
+  color: black;
+  width: max-content;
+  right: 2px;
+  font-size: 20px;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 1px 1px 1px 1px black;
+} */
+
+a {
+  /* margin: auto; */
+  color: black;
+  text-decoration: none;
+  border-bottom: none;
+  padding: 10px;
+}
+
+
+video {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  z-index: -999;
+
+}
+
+ h2 {
+ 
+  text-align: center;
+  font-family: 'homoarakhn';
+  src: url('images/homoarakhn.TTF') format('.ttf');
+  font-size: 30px;
+  font-weight: 900;
+  height: fit-content;
+}
+.first-body{
+  position: relative;
+  top: -73px;
+}
+.video-section{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+video{
+  
+  width: 100%;
+}
+
+.video-section > img {
+  position: relative;
+  left: 50%;
+  top: 80px;
+  transform: translateX(-50%);
+  height: 100px;
+}
+
+.video-section h2 {
+  position: relative;
+  top: 140px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* background: #000; */
+  position: relative;
+  top: 170px;
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a.appstore img{
+  height: 120px;
+}
+
+a img{
+  transition: transform 0.3s;
+}
+
+a img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  position: relative;
+  top: -73px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.credits {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.credits a img {
+position: relative;
+left: -15px;
+  height: 41px;
+  width: auto;
+
+
+}
+
+
+@media (max-width: 767px){
+  nav.navbar h2{
+    font-size: 15px;
+  }
+  div.second-section{
+    right: 0;
+  }
+  div.second-section ul li a{
+    font-size: 15px;
+  }
+  div.first-body{
+    top: 0;
+  }
+  div.video-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.video-section > img{
+    height: 50px;
+    top: 10px;
+    left: 0;
+    transform: translateX(0);
+  }
+  div.video-section > h2{
+    font-size: 25px;
+    width: 80%;
+    top: 20px;
+  }
+  div.links{
+    display: flex;
+    left: 0;
+    top: 30px;
+    transform: translateX(0);
+    flex-direction: row;
+  }
+  div.links a img{
+    height: 70px;
+  }
+  div.links a.appstore{
+    position: relative;
+    top: 1px; 
+  }
+  div.links a.appstore img{
+    height: 55px;
+  }
+}
