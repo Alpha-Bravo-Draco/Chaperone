@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: 0;
 }
+
 body {
-  
-  overflow-x: hidden; 
+
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
   background: url(./images/background.jpg);
@@ -17,12 +18,19 @@ body {
 
 }
 
-.logo{
+.logo {
   width: 80px;
 
 }
-
-h4{
+.about{
+  text-align: center;
+    font-family: 'homoarakhn';
+    src: url('images/homoarakhn.TTF') format('.ttf');
+    font-size: 30px;
+    font-weight: 900;
+    height: fit-content;
+}
+h4 {
 
   padding: 20px;
   width: calc(100% - 50px);

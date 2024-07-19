@@ -57,13 +57,14 @@ nav.navbar {
   font-size: 19px;
   padding: 25px 25px;
   transition: all 0.3s ease;
-  color: #454545;
+  color: #000000;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .second-section ul li a:hover {
-  background-color: rgb(65, 85, 94);
+  
   color: white;
+  text-shadow: 2px 2px black;
 }
 
 .button-section {
@@ -165,9 +166,7 @@ div.links{
   transform: translateX(-50%);
 }
 
-a.appstore img{
-  height: 120px;
-}
+
 
 a img{
   transition: transform 0.3s;
@@ -176,7 +175,9 @@ a img{
 a img:hover {
   transform: scale(1.1);
 }
-
+.privacy {
+  color: aliceblue;
+}
 footer {
   position: relative;
   top: -73px;
@@ -184,24 +185,19 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: black;
+  color: aliceblue;
+   
 }
 
 .credits {
   display: flex;
   flex-direction: row;
-  gap: 0;
   align-items: center;
   justify-content: center;
 }
 
-.credits a img {
-position: relative;
-left: -15px;
-  height: 41px;
-  width: auto;
 
-
-}
 
 
 @media (max-width: 767px){
