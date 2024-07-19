@@ -1,0 +1,74 @@
+ body {
+   font-family: Arial, sans-serif;
+   background-color: #fdfdfd;
+   margin: 0;
+   padding: 0;
+ }
+
+ h1 {
+   text-align: center;
+   margin-top: 20px;
+ }
+ img{
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+ form {
+   width: 400px;
+   /* Adjust the width as needed */
+   margin: 0 auto;
+   background-color: #fff;
+   padding: 20px 40px;
+   /* Increase the padding to expand the background area */
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+ }
+
+ label,
+ input,
+ textarea {
+   display: block;
+   margin-bottom: 10px;
+ }
+
+ input[type="text"],
+ input[type="tel"],
+ input[type="email"],
+ textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+ }
+ .heading
+ {display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+ }
+.logo
+{
+  z-index: -1;
+  height: 50px;
+  width: auto;
+  position: relative;
+  right:-60px;
+  top:15px;
+}
+ input[type="submit"] {
+   background-color: #000000;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+ input[type="submit"]:hover {
+   background-color: rgb(255, 255, 255);
+  color: #000000;
+  }

@@ -10,7 +10,6 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
 nav.navbar {
   display: flex;
   flex-direction: row;
@@ -175,8 +174,10 @@ a img{
 a img:hover {
   transform: scale(1.1);
 }
-.privacy {
+.form {
   color: aliceblue;
+  position: relative;
+  /* top: 50px; */
 }
 footer {
   position: relative;
@@ -210,6 +211,11 @@ footer {
   div.second-section ul li a{
     font-size: 15px;
   }
+  video
+  {
+    width: 100vw;
+    height: 100vh;
+  }
   div.first-body{
     top: 0;
   }
@@ -238,6 +244,7 @@ footer {
   }
   div.links a img{
     height: 70px;
+    width: auto;
   }
   div.links a.appstore{
     position: relative;
