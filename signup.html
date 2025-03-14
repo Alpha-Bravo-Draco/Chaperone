@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <link rel="stylesheet" href="signup.css" />
   <head>
@@ -12,16 +12,16 @@
       <label for="full-name">Full Name:</label>
       <input type="text" id="full-name" name="full-name" required />
 
-      <label for="email">Email:</label>
+      <label for="email">email:</label>
       <input type="email" id="email" name="email" required />
 
-      <label for="username">Username:</label>
+      <label for="username">username:</label>
       <input type="text" id="username" name="username" required />
 
-      <label for="password">Password:</label>
+      <label for="password">password:</label>
       <input type="password" id="password" name="password" required />
 
-      <label for="age">Age:</label>
+      <label for="age">age:</label>
       <input type="number" id="age" name="age" required min="18" max="50" />
 
       <label for="sex">Sex:</label>
@@ -35,11 +35,11 @@
     </form>
     <script>
       function validateAge() {
-        var ageInput = document.getElementById("age");
+        var ageInput = document.getElementById('age');
         var age = parseInt(ageInput.value);
 
         if (age < 18 || age > 50) {
-          alert("Your age should be between 18 and 50.");
+          alert('Your age should be between 18 and 50.');
           return false;
         }
 
